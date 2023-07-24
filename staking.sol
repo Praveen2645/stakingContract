@@ -11,7 +11,7 @@ contract Staking is Pausable, ReentrancyGuard {
     using SafeERC20 for IERC20;
 
     uint256 public minStakeAmount = 20 * 10**14;
-    uint256 public maxStakeAmount = 200 * 10**14;
+    uint256 public maxStakeAmount = 200000 * 10**14;
     address public owner;
     struct User {
         uint256 amount;
